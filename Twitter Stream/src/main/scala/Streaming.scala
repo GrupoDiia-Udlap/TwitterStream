@@ -12,6 +12,7 @@ import scala.util.Try
 object Streaming {
 
   def main(args : Array[String]) {
+    //System.setProperty("hadoop.home.dir", "C:\\winutils"); //Windows only
     val conf = new SparkConf()
       .setAppName("Twitter sentiment analysis")
       .setMaster("local[*]")//Create local instance of master with [*] slaves (usually means as much as possible)
